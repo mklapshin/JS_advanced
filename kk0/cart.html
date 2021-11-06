@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="shop.js"></script>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-2">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__contorls">
+                        <a href="./catalog.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44"
+                                height="38"></a>
+                        <a href="./product.html"><img src="./img/loupe.svg" alt="loupe" width="26" height="27"></a>
+                    </div>
+                    <div class="header__contorls">
+                        <a href="./index.html"><button class="header__button">
+                                <img src="./img/form1.png" alt="loupe" width="26" height="27">
+                            </button></a>
+                        <a class="header__person-link" href="./contacts.html"><img src="./img/form2.png" alt="loupe"
+                                width="26" height="27"></a>
+                        <a href="#"><img src="./img/form3.png" alt="loupe" width="26" height="27"></a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__navigation">
+                menu
+                <ul>
+                    <li>
+                        <h2>man</h2>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>woman</h2>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>kids</h2>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="container-2">
+            <section class="registration">
+                <h1 class="registration-header">SHOPPING CART</h1>
+            </section>
+            <section class="cart">
+                <div class="brand-wrapper">
+                    <div class="cart-loyality">
+
+                        <div id="block_1" class="cart-1">
+                            <img class="cart-1-image" src="./img/catalog-item-3.png" alt="" width="262" height="306">
+                            <div class="cart-1-info">
+                                <h3 class="cart-header">3 MANGO PEOPLE</h3>
+                                <h3 class="cart-header-2">T-SHIRT</h3>
+                                <p class="cart-paragraph">Price: $100</p>
+                                <p class="cart-paragraph">Color: Red</p>
+                                <p class="cart-paragraph">Size: Xl</p>
+                                <p class="cart-paragraph">Quantity:</p>
+                                <button id="item1" data-price="100" qnt="1" class="btn">BUY</button>
+                                <button id="item1" data-price="100" qnt="1" class="btn">+</button>
+                                <button id="item2" data-price="100" qnt2="1" class="btn2">-</button>
+             
+                            </div>
+                            <div id="button_1" class="cart-cross">
+                                <img src="./img/cross.png" alt="">
+                            </div>
+                            <div id="quantityFinal" class="cart-number">
+                                <div id="totalQuantity">0</div>
+                            </div>
+                        </div>
+                        <div id="block_2" class="cart-2">
+                            <img class="cart-1-image" src="./img/catalog-item-10.png" alt="" width="262" height="306">
+                            <div class="cart-1-info">
+                                <h3 class="cart-header">2 MANGO PEOPLE</h3>
+                                <h3 class="cart-header-2">T-SHIRT</h3>
+                                <p class="cart-paragraph">Price: $200</p>
+                                <p class="cart-paragraph">Color: Red</p>
+                                <p class="cart-paragraph">Size: Xl</p>
+                                <p class="cart-paragraph">Quantity:</p>
+                                <button id="item1" data-price="200" qnt="1" class="btn_2">BUY</button>
+                                <button id="item1" data-price="200" qnt="1" class="btn_2">+</button>
+                                <button id="item2" data-price="200" qnt2="1" class="btn2_2">-</button>
+                                
+                            </div>
+                            <div id="button_2" class="cart-cross">
+                                <img src="./img/cross.png" alt="">
+                            </div>
+                            <div id="quantityFinal" class="cart-number">
+                                <div id="totalQuantity2">0</div>
+                            </div>
+                        </div>
+                        
+                          <div id="basket" class="section2">
+                            <p>КОРЗИНА</p>
+                          </div>
+                          <div id="priceFinal" class="section3">
+                            <p>ИТОГО К ОПЛАТЕ:</p>
+                            <div id="totalSum">0</div>
+                         </div>
+                        <div class="form-button">
+                            <button id="button_3" class="button-form-1" type="submit">CLEAR SHOPPING CART</button>
+                            <button class="button-form-2" type="submit">CONTINUE SHOPPING</button>
+                        </div>
+                    </div>
+                    <div class="cart-content-form">
+                        <p class="contacts-form-paragraph">SHIPPING ADRESS</p>
+                        <input class="entryfield1" type="text" placeholder="Bangladesh" width="358" height="44"><br>
+                        <input class="entryfield2" type="text" placeholder="State"><br>
+                        <input class="entryfield1" type="text" placeholder="Postcode / Zip"><br>
+                        <button class="button-form-3" type="submit">GET A QUOTE</button>
+                        <div class="cart-3">
+                            <p class="cart3-paragraph1">SUB TOTAL</p>
+                            <div id="totalSum2" class="cart3-paragraph2">$ 0</div>
+                            <p class="cart3-paragraph3">GRAND TOTAL</p>
+                            <div id="totalSum3" class="cart3-paragraph4">$ 0</div>
+                            <button class="button-form-4" type="submit">PROCEED TO CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="subscribe-photo">
+                    <img src="./img/subscribe-photo.png" alt="">
+                </div>
+                <div class="subscribe-text">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </div>
+                <div class="subscribe-form">
+                    <h2 class="subscribe-header1">SUBSCRIBE</h2>
+                    <h3 class="subscribe-header2">FOR OUR NEWLETTER AND PROMOTION</h3>
+                    <div class="subscribe-input">
+                        <input class="subscribe-entryfield" type="email" placeholder="Enter Your Email"><br>
+                        <button class="subscribe-button" type="submit">Subscribe</button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <div class="container-2">
+        <footer>
+            <div class="footer-text">
+                © 2021 Brand All Rights Reserved.
+            </div>
+            <div class="footer-pictures">
+                <img src="./img/instagramm.png" alt="insta">
+                <img src="./img/facebook.png" alt="face">
+                <img src="./img/pinterest.png" alt="pint">
+                <img src="./img/twitter.png" alt="twit">
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
