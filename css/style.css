@@ -62,13 +62,16 @@ body {
 }
 
 .header__person-link {
-    margin: 0 34px 0 0;
+    margin: 0 34px 30px 0;
+    color: white;
+    font-size: 24px;
 }
 
 .brand {
     display: flex;
-    margin: 0 0 63px;
+    margin: 0 auto;
     min-height: 675px;
+    text-align: center;
 }
 
 .brand__title {
@@ -166,8 +169,8 @@ body {
 .products__item {
     color: black;
     width: 360px;
-    min-height: 581px;
-    margin: 0 0 30px;
+    min-height: 481px;
+    margin: 0 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,8 +183,8 @@ body {
 .products-item-price {
     font-family: Lato;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 30px;
+    font-size: 20px;
     line-height: 19px;
     color: #F16D7F;
 }
@@ -190,21 +193,20 @@ body {
     position: relative;
 }
 
-
-
 .cart-wrapper:hover {
     background: rgba(58, 56, 56, 0.86);
 }
 
 .products-item-header {
     margin-bottom: 13px;
+    font-size: 26px;
 }
 
 .cart-wrapper:before {
     content: '';
     width: 100%;
-    min-height: 419px;
-    background: rgba(58, 56, 56, 0.86);
+    min-height: 435px;
+    background: rgba(78, 77, 77, 0.86);
     position: absolute;
     top: 0;
     display: none;
@@ -217,13 +219,14 @@ body {
 .products-text {
     background: #F8F8F8;
     padding: 25px 29px 20px 19px;
+    min-height: 140px;
 }
 
 .products-button {
     position: absolute;
     width: 138px;
     min-height: 43px;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -246,11 +249,19 @@ body {
 
 .products-item-description {
     margin-bottom: 18px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 24px;
+    color: black;
 }
 
 .brand-wrapper {
     position: relative;
     min-height: 600px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .contacts-content-form {
@@ -259,29 +270,28 @@ body {
 }
 
 .entryfield1 {
-    width: 359px;
+    width: 959px;
     min-height: 44px;
     margin: 20px 0 0 0;
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 28px;
     line-height: 16px;
-    color: #B1B1B1;
+    color: black;
 }
 
 .entryfield2 {
     margin-top: 34px;
-    width: 359px;
-    min-height: 44px;
+    width: 959px;
+    min-height: 184px;
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 28px;
     line-height: 16px;
-    color: #B1B1B1;
+    color: black;
 }
-
 
 .entryfield {
     width: 359px;
@@ -803,7 +813,7 @@ footer {
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 36px;
     line-height: 19px;
     color: black;
     margin-top: -10px;
@@ -1014,6 +1024,88 @@ footer {
     display: block;
 }
 
+.start {
+    min-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start-1 {
+    margin: 100px 0 100px 0;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 37px;
+}
+
+.start-2 {
+    min-height: 2900px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 59px;
+}
+
+.start-3 {
+    min-height: 300px;
+}
+
+.start-4 {
+    min-height: 300px;
+}
+
+.l1 {
+    color: white;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 37px;
+}
+
+.news-content {
+    min-height: 500px;
+    width: 1600px;
+    margin-top: 90px;
+    margin-left: 25px;
+    color: black;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 37px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.photo {
+    min-height: 2400px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.news-button {
+    margin: 60px 0 20px 220px;
+}
+
+.start-map {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start-2-header {
+    margin-bottom: 60px;
+    margin-top: 120px;
+    font-size: 42px;
+    text-align: center;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 91%;
@@ -1121,53 +1213,4 @@ footer {
         margin: -1px 0 0 0;
     }
 
-    .brand {
-        min-height: 1275px;
-    }
-
-    .contacts-content-form {
-        position: absolute;
-        margin: 90px 0 0 20px;
-    }
-
-    .loyality {
-        position: absolute;
-        margin: 800px 0 0 0;
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: #000000;
-    }
-
-    .products-block {
-        max-width: 300px;
-    }
-
-    .products-block2 {
-        display: none;
-    }
-
-    .products-block3 {
-        display: none;
-    }
-
-    .products-block4 {
-        display: none;
-    }
-
-    footer {
-        min-height: 143px;
-    }
-
-    .footer-pictures {
-        position: absolute;
-        margin: 51px 0 0 155px;
-    }
-
-    .footer-text {
-        position: absolute;
-        margin: 100px 0 0 92px;
-    }
 }
