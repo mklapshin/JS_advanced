@@ -8,17 +8,9 @@
   </head>
   <body>
     <div id="app">
-      <div class="container">
-        <header>
-          <search></search>
-        </header>
-        <main>
-          <goods-list :goods="filteredGoods"></goods-list>
-          <basket v-if="cartItems.length != 0"></basket>
-        </main>
-      </div>
+      <some-component :name="secondName"  :surname="secondSurname"></some-component>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-  <script src="script.js"></script>
+  <script src="scriptComponents.js"></script>
 </html>
