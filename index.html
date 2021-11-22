@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+  <title>eShop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <header>
+        <input type="text" class="goods-search" v-model="name" />
+        <button class="search-button" type="button">Искать</button>
+        <button class="cart-button" type="button">Корзина</button>
+      </header>
+      <main>
+        <div class="container">
+          <div class="goods-list">
+            <div class="goods-item" v-on:click="addToBasket" v-for="good in filteredGoods">
+              <h3>{{good.product_name}}</h3>
+              <p>{{good.price}}</p>
+            </div>
+            <p>{{name}}</p>
+          </div>
+          <h3 class="basket-header" v-if="showBasket">Корзина</h3>
+          <div class="basket" v-if="showBasket">
+            <div class="goods-item" v-if="showItem2">
+              <h3>Мышка</h3>
+              <p>1000</p>
+            </div>
+            <div class="goods-item" v-if="showItem1">
+              <h3>Ноутбук</h3>
+              <p>45600</p>
+            </div>
+          </div>
+
+      </main>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="script.js"></script>
+
+</html>
