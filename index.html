@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <title>eShop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header>
+          <search></search>
+        </header>
+        <main>
+          <goods-list :goods="filteredGoods"></goods-list>
+          <basket v-if="cartItems.length != 0"></basket>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="script.js"></script>
+</html>
